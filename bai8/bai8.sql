@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS bai8_ckeditor
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+USE bai8_ckeditor;
+
+CREATE TABLE IF NOT EXISTS bai8_noidung (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    noi_dung LONGTEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
